@@ -1,4 +1,4 @@
-# README – DEEPLEARNING 
+# DEEPLEARNING 
 ##  TUẦN 2 : NUMPY, PANDAS, Matplotlib
 
 ---

@@ -12,9 +12,9 @@
 
 ## 1. Giới thiệu về bài lab
 
-Trong bài lab này, em được làm quen với **Mạng Nơ-ron Nhân tạo (ANN)** bằng thư viện **PyTorch**.
+Trong bài lab này,  được làm quen với **Mạng Nơ-ron Nhân tạo (ANN)** bằng thư viện **PyTorch**.
 
-Bài lab giúp em hiểu được cách một mô hình ANN đơn giản hoạt động như thế nào, từ khâu:
+Bài lab giúp hiểu được cách một mô hình ANN đơn giản hoạt động như thế nào, từ khâu:
 - tạo dữ liệu
 - xây dựng mô hình
 - huấn luyện
@@ -24,7 +24,7 @@ Bài lab giúp em hiểu được cách một mô hình ANN đơn giản hoạt 
 
 ## 2. Các thư viện sử dụng trong bài
 
-Em đã sử dụng các thư viện chính sau:
+ đã sử dụng các thư viện chính sau:
 
 - **NumPy:** tạo dữ liệu ngẫu nhiên và xử lý mảng số học
 - **PyTorch (torch):** xây dựng và huấn luyện mạng nơ-ron
@@ -37,7 +37,7 @@ Em đã sử dụng các thư viện chính sau:
 
 ## 3. Tạo dữ liệu (Dataset)
 
-Trong lab này, em tạo dữ liệu giả lập gồm 2 lớp:
+Trong lab này, tạo dữ liệu giả lập gồm 2 lớp:
 
 - **Lớp 0:** các điểm nằm trong vùng **vòng tròn** (radius nhỏ)
 - **Lớp 1:** các điểm nằm trong vùng **vành đai** (radius lớn hơn)
@@ -48,7 +48,7 @@ Dữ liệu được tạo ngẫu nhiên bằng `numpy.random` và được bi�
 
 ## 4. Chia dữ liệu Train/Test
 
-Sau khi tạo xong dữ liệu, em thực hiện:
+Sau khi tạo xong dữ liệu, thực hiện:
 
 - Gộp dữ liệu thành tập `X` và nhãn `y`
 - Chia thành 2 tập:
@@ -60,7 +60,7 @@ Sau khi tạo xong dữ liệu, em thực hiện:
 
 ## 5. Xây dựng mô hình ANN bằng PyTorch
 
-Em xây dựng một mô hình ANN đơn giản gồm:
+ xây dựng một mô hình ANN đơn giản gồm:
 
 - **Input layer:** 2 đầu vào (x, y)
 - **Hidden layer:** 4 neuron
@@ -74,7 +74,7 @@ Các hàm kích hoạt được dùng:
 
 ## 6. Hàm loss và optimizer
 
-Trong bài lab, em sử dụng:
+Trong bài lab, ta sử dụng:
 
 - **Loss function:** `BCELoss()`  
   (vì đây là bài toán phân loại nhị phân)
@@ -86,20 +86,20 @@ Trong bài lab, em sử dụng:
 
 ## 7. Huấn luyện mô hình (Training)
 
-Em thực hiện quá trình training gồm nhiều epoch:
+ thực hiện quá trình training gồm nhiều epoch:
 
 - Forward: đưa dữ liệu vào mô hình
 - Tính loss
 - Backward: tính gradient bằng `loss.backward()`
 - Cập nhật trọng số bằng `optimizer.step()`
 
-Trong quá trình huấn luyện, em có theo dõi loss để xem mô hình học tốt hay không.
+Trong quá trình huấn luyện, theo dõi loss để xem mô hình học tốt hay không.
 
 ---
 
 ## 8. Dự đoán và đánh giá mô hình
 
-Sau khi huấn luyện xong, em tiến hành:
+Sau khi huấn luyện xong,ta tiến hành:
 
 - Dự đoán trên tập test
 - Chuyển xác suất về nhãn (0 hoặc 1)
@@ -109,7 +109,7 @@ Sau khi huấn luyện xong, em tiến hành:
 
 ## 9. Trực quan hóa kết quả
 
-Một phần khá thú vị trong lab là em được trực quan hóa:
+Một phần trong lab là được trực quan hóa:
 
 - Dữ liệu 2 lớp ban đầu (vòng tròn và vành đai)
 - Kết quả mô hình phân loại
@@ -119,7 +119,7 @@ Một phần khá thú vị trong lab là em được trực quan hóa:
 
 ## 10. Những gì rút ra được sau buổi lab
 
-Sau bài lab này, em rút ra được:
+Sau bài lab này, ta rút ra được:
 
 - Hiểu rõ hơn ANN là gì và hoạt động ra sao
 - Biết cách xây dựng một mô hình ANN đơn giản bằng PyTorch
@@ -132,8 +132,8 @@ Sau bài lab này, em rút ra được:
 
 ## Kết luận
 
-Buổi lab này giúp em có cái nhìn rõ hơn về cách một mô hình ANN học dữ liệu.  
-Tuy mô hình khá đơn giản nhưng em thấy đây là nền tảng quan trọng để học tiếp các phần như:
+Buổi lab này giúp có cái nhìn rõ hơn về cách một mô hình ANN học dữ liệu.  
+Tuy mô hình khá đơn giản nhưng đây là nền tảng quan trọng để học tiếp các phần như:
 
 - MLP nhiều tầng hơn
 - CNN

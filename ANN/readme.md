@@ -117,7 +117,7 @@ Một phần khá thú vị trong lab là em được trực quan hóa:
 
 ---
 
-## 10. Những gì em rút ra được sau buổi lab
+## 10. Những gì rút ra được sau buổi lab
 
 Sau bài lab này, em rút ra được:
 
